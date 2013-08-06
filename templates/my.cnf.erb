@@ -42,7 +42,7 @@ ssl-cert  = <%= ssl_cert %>
 ssl-key   = <%= ssl_key %>
 <% end %>
 
-<% mysqld_misc_settings.each do |key, value| -%>
+<% mysqld_misc_settings.sort.each do |key, value| -%>
 <%= key %> = <%= value %>
 <% end -%>
 
